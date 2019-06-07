@@ -1,0 +1,17 @@
+{
+  "name": "com.id.ifabula.testingcordovaplugin2",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.id.ifabula.testingcordovaplugin2",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC"
+}
