@@ -15,11 +15,18 @@
 		<config-file parent="/*" target="AndroidManifest.xml">
 			<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 		    <uses-permission android:name="android.permission.BLUETOOTH" />
-		    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 		    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 		</config-file>
 		<source-file src="src/android/FingerPrintPlugin.java" target-dir="src/com/ifabula/fingerprintplugin/FingerPrintPlugin" />
 		<source-file src="src/android/BluetoothReaderService.java" target-dir="src/com/ifabula/fingerprintplugin/BluetoothReaderService" />
 		<source-file src="src/android/wsq.java" target-dir="src/com/ifabula/fingerprintplugin/wsq" />
+		
+		<source-file src="src/android/jniLibs/armeabi/libconversions.so" target-dir="src/com/ifabula/fingerprintplugin/jniLibs/armeabi" />
+		<source-file src="src/android/jniLibs/armeabi/libfgtitalg.so" target-dir="src/com/ifabula/fingerprintplugin/jniLibs/armeabi" />
+		<source-file src="src/android/jniLibs/armeabi/libfpcore.so" target-dir="src/com/ifabula/fingerprintplugin/jniLibs/armeabi" />
+		<source-file src="src/android/jniLibs/armeabi/libfpimage.so" target-dir="src/com/ifabula/fingerprintplugin/jniLibs/armeabi" />
+		<source-file src="src/android/jniLibs/armeabi/libwsq.so" target-dir="src/com/ifabula/fingerprintplugin/jniLibs/armeabi" />
 	</platform>
 </plugin>

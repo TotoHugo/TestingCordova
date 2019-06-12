@@ -175,6 +175,7 @@ public class FingerPrintPlugin extends CordovaPlugin {
 			this.mPreviousScanMode = this.mBluetoothAdapter.getScanMode();
 		}
 
+		CreateDirectory();
 		cordova.getThreadPool().execute(new Runnable() {
 			public void run() {
 				writeLoop();
