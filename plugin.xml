@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.ifabula.fingerprintplugin" version="0.0.1"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>FingerPrintPlugin</name>
+	<js-module name="FingerPrintPlugin" src="www/FingerPrintPlugin.js">
+		<clobbers target="cordova.plugins.FingerPrintPlugin" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="FingerPrintPlugin">
+				<param name="android-package" value="com.ifabula.fingerprintplugin.FingerPrintPlugin" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+		    <uses-permission android:name="android.permission.BLUETOOTH" />
+		    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+		    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+		</config-file>
+		<source-file src="src/android/FingerPrintPlugin.java" target-dir="src/com/ifabula/fingerprintplugin/FingerPrintPlugin" />
+		<source-file src="src/android/BluetoothReaderService.java" target-dir="src/com/ifabula/fingerprintplugin/BluetoothReaderService" />
+		<source-file src="src/android/wsq.java" target-dir="src/com/ifabula/fingerprintplugin/wsq" />
+	</platform>
+</plugin>

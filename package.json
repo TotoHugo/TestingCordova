@@ -1,0 +1,25 @@
+{
+  "name": "com.ifabula.fingerprintplugin",
+  "version": "0.0.1",
+  "description": "finger print plugin",
+  "cordova": {
+    "id": "com.ifabula.fingerprintplugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stanidesis/toastyplugin.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "vicky ifabula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stanidesis/toastyplugin/issues"
+  },
+  "homepage": "https://github.com/stanidesis/toastyplugin#readme"
+}
